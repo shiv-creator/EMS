@@ -1,6 +1,9 @@
+from pyvirtualdisplay import Display
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
+display = Display(visible=0, size=(800, 600))
+display.start()
 options = Options();
 options.add_argument("--headless");
 name = "Markit16May2019"
