@@ -27,8 +27,8 @@
 									Class.forName("com.mysql.jdbc.Driver");
 
 									// creating connection Using Postgres Change it to other
-									Connection conn = DriverManager.getConnection("jdbc:mysql://ptcntttst001:3306/jasperserver", "jasperdb",
-											"jasperdb");
+									Connection conn = DriverManager.getConnection("jdbc:mysql://slave1:3306/ems_db", "emsdb",
+											"emsdb");
 
 									Statement statement = conn.createStatement();
 
@@ -65,8 +65,8 @@
 									Class.forName("com.mysql.jdbc.Driver");
 
 									// creating connection Using Postgres Change it to other
-									Connection conn = DriverManager.getConnection("jdbc:mysql://ptcntttst001:3306/jasperserver", "jasperdb",
-											"jasperdb");
+									Connection conn = DriverManager.getConnection("jdbc:mysql://slave1:3306/ems_db", "emsdb",
+											"emsdb");
 
 									Statement statement = conn.createStatement();
 
