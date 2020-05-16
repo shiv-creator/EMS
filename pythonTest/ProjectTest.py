@@ -7,7 +7,7 @@ name = "Markit16May2019"
 location = "Noida"
 driver = webdriver.Firefox(executable_path='/usr/local/bin/geckodriver',options=options)
 #driver = webdriver.Firefox(firefox_options=options);
-driver.get("http://slave1:8080/EMS/project.jsp")
+driver.get("http://slave1:8070/EMS/project.jsp")
 assert "Registration" in driver.title
 elem = driver.find_element_by_name("name")
 elem.send_keys(name)
